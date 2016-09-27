@@ -1,0 +1,32 @@
+{
+  "name": "GeoIP2",
+  "version": "0.1.0",
+  "description": "MaxMind GeoIP2 Location Provider",
+  "keywords": ["geoip", "geoip2", "maxmind", "location", "location provider"],
+  "theme": false,
+  "require": {
+    "piwik": ">=3.0.0-b1"
+  },
+  "authors": [
+    {
+      "name": "Krzysztof Szatanik",
+      "email": "chris.szatanik@gmail.com",
+      "homepage": ""
+    }
+  ],
+  "support": {
+    "email": "",
+    "issues": "https://github.com/diabl0/piwik-geoip2/issues",
+    "forum": "",
+    "irc": "",
+    "wiki": "https://github.com/diabl0/piwik-geoip2/wiki",
+    "source": "https://github.com/diabl0/piwik-geoip2",
+    "docs": "",
+    "rss": ""
+  },
+  "donate": {
+    "paypal": "diabl0@gazeta.ie"
+  },
+  "homepage": "",
+  "license": "GPL v3+"
+}
