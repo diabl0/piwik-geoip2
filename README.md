@@ -12,3 +12,5 @@ Currently supported databases:
 * GeoLite2-Country.mmdb
 
 ## [How do i get GeoIP2 databases](https://github.com/diabl0/piwik-geoip2/wiki/How-do-I-get-the-GeoIP-2-databases%3F)
+
+## [FAQ](https://github.com/diabl0/piwik-geoip2/wiki/FAQ)
