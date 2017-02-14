@@ -1,3 +1,5 @@
 ## Changelog
 
-Here goes the changelog text.
+#1.3
+
++ code cleanup
