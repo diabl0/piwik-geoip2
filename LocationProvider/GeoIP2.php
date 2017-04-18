@@ -222,6 +222,8 @@ class GeoIp2 extends LocationProvider
 
         $this->completeLocationResult($result);
 
+        // echo '<pre>'; print_r($result); echo '</pre>';exit();
+
         return $result;
     }
 
