@@ -122,7 +122,6 @@ class GeoIp2 extends LocationProvider
             'description' => $desc,
             'install_docs' => $installDocs,
             'extra_message' => $extraMessage,
-            'order' => 2,
         ];
     }
 

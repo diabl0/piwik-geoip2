@@ -13,19 +13,9 @@ use Piwik\Plugin;
 class GeoIP2 extends Plugin
 {
 
-    /**
-     * @see \Piwik\Plugin::registerEvents
-     */
-    public function registerEvents()
+    public function isTrackerPlugin()
     {
-        // required to get Plugin loaded during tracker code execution
-        return array(
-            'Tracker.setTrackerCacheGeneral' => 'setTrackerCacheGeneral',
-        );
-    }
-
-    public function setTrackerCacheGeneral(&$cache)
-    {
+        return true;
     }
 
 }
