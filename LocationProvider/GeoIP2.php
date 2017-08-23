@@ -26,6 +26,7 @@ class GeoIp2 extends LocationProvider
 {
     const ID = 'geoip2_php';
     const TITLE = 'GeoIP 2';
+    const TEST_IP = '194.57.91.215';
 
     public static $geoIPDatabaseDir = 'misc';
 
@@ -73,6 +74,7 @@ class GeoIp2 extends LocationProvider
      */
     public function __construct($customDbNames = false)
     {
+//        die($customDbNames);
         $this->customDbNames = self::$dbNames;
         if ($customDbNames !== false) {
             foreach ($this->customDbNames as $key => $names) {
@@ -169,7 +171,7 @@ class GeoIp2 extends LocationProvider
     public function getLocation($info)
     {
         $ip = $this->getIpFromInfo($info);
-//        $ip = '89.74.253.69';
+//        $ip = self::TEST_IP;
 
         $result = [];
         $reader = $this->getReader();
@@ -222,6 +224,8 @@ class GeoIp2 extends LocationProvider
 
         $this->completeLocationResult($result);
 
+        // echo '<pre>'; print_r($result); echo '</pre>';exit();
+
         return $result;
     }
 
@@ -240,7 +244,6 @@ class GeoIp2 extends LocationProvider
                     break;
                 }
             }
-
         }
 
         return $this->reader;
@@ -265,7 +268,6 @@ class GeoIp2 extends LocationProvider
         }
 
         return (isset($this->_isoRegionCodes[$countryCode][$regionIsoCode])) ? $this->_isoRegionCodes[$countryCode][$regionIsoCode] : null;
-
     }
 
     /**

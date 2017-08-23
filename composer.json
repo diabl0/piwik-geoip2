@@ -1,4 +1,13 @@
 {
+  "name": "diabl0/piwik-geoip2",
+  "description": "Plugin for Piwik adding support for MaxMind GeoIP2 database.",
+  "license": "GPL-3.0+",
+  "authors": [
+    {
+      "name": "Krzysztof Szatanik",
+      "homepage": "https://github.com/diabl0/piwik-geoip2"
+    }
+  ],
     "require": {
         "geoip2/geoip2": "^2.4"
     }
