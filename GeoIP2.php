@@ -12,10 +12,8 @@ use Piwik\Plugin;
 
 class GeoIP2 extends Plugin
 {
-
     public function isTrackerPlugin()
     {
         return true;
     }
-
 }
