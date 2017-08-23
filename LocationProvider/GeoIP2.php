@@ -117,11 +117,12 @@ class GeoIp2 extends LocationProvider
             . implode(', ', $availableDatabaseTypes) . '</em></strong>.';
 
         return [
-            'id' => self::ID,
-            'title' => self::TITLE,
-            'description' => $desc,
-            'install_docs' => $installDocs,
+            'id'            => self::ID,
+            'title'         => self::TITLE,
+            'description'   => $desc,
+            'install_docs'  => $installDocs,
             'extra_message' => $extraMessage,
+            'order'         => 20,
         ];
     }
 
